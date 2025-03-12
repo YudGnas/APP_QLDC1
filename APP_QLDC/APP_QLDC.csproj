@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\natra.jpg" />
+    <None Remove="Image\pop cat.psd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="5.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\natra.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Image\pop cat.psd">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
